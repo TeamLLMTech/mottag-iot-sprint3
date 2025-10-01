@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Map Realtime</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>IoT Map Realtime</h1>
+    <canvas id="mapCanvas" width="800" height="600"></canvas>
+    <div id="rssi-graphs">
+        <div>
+            <h3>scan1 RSSI</h3>
+            <canvas id="rssiScan1" width="350" height="150"></canvas>
+        </div>
+        <div>
+            <h3>scan2 RSSI</h3>
+            <canvas id="rssiScan2" width="350" height="150"></canvas>
+        </div>
+        <div>
+            <h3>scan3 RSSI</h3>
+            <canvas id="rssiScan3" width="350" height="150"></canvas>
+        </div>
+        <div>
+            <h3>scan4 RSSI</h3>
+            <canvas id="rssiScan4" width="350" height="150"></canvas>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
